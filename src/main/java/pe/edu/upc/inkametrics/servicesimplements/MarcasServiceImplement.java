@@ -2,6 +2,7 @@ package pe.edu.upc.inkametrics.servicesimplements;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pe.edu.upc.inkametrics.dtos.MetricaPorRegionDTO;
 import pe.edu.upc.inkametrics.entities.Marcas;
 import pe.edu.upc.inkametrics.repositories.IMarcasRepository;
 import pe.edu.upc.inkametrics.servicesinterfaces.IMarcasService;
@@ -39,4 +40,6 @@ public class MarcasServiceImplement implements IMarcasService {
     public void delete(int id) {
         cR.deleteById(id);
     }
+
+
 }

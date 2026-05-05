@@ -1,5 +1,6 @@
 package pe.edu.upc.inkametrics.servicesinterfaces;
 
+import pe.edu.upc.inkametrics.dtos.MetricaPorRegionDTO;
 import pe.edu.upc.inkametrics.entities.Marcas;
 import java.util.List;
 import java.util.Optional;
@@ -14,4 +15,5 @@ public interface IMarcasService {
     public void update(Marcas mar);
 
     public void delete(int id);
+
 }

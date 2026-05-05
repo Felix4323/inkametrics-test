@@ -2,6 +2,7 @@ package pe.edu.upc.inkametrics.servicesimplements;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pe.edu.upc.inkametrics.dtos.MetricaPorRegionDTO;
 import pe.edu.upc.inkametrics.entities.Metricas;
 import pe.edu.upc.inkametrics.repositories.IMetricasRepository;
 import pe.edu.upc.inkametrics.servicesinterfaces.IMetricasService;
@@ -42,6 +43,10 @@ public class MetricasServiceImplement implements IMetricasService {
     @Override
     public List<Object[]> reporteMetricasJPQL() {
         return cR.reporteMetricasJPQL("comentarios");
+    }
+
+        public List<MetricaPorRegionDTO> obtenerRendimientoPorRegion() {
+        return cR.findMetricsPerformanceByRegion();
     }
 
 
